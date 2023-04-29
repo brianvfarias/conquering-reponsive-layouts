@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(117, 116, 116);
+}
+
+.parent {
+  background: lightgreen;
+  margin: 0 auto;
+  height: 300px;
+  width: 80%;
+  padding: 1rem;
+}
+
+.child {
+  background: lightblue;
+  height: 100px;
+}
