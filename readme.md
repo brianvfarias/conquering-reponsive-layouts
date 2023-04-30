@@ -8,4 +8,4 @@ This repository contains all the code I've develop through the course Conquering
 
 Recently I was challenged to develop a complete responsive layout and, although I was able to deliver all the code in due time, I had a lot of trouble doing so.
 
-This situation showed me that I need more practice with the fundamentals of development, and that is the reason why I chose to take this course I improve myself on this matter!
+This situation showed me that I need more practice with the fundamentals of development, and that is the reason why I chose to take this course, so I can improve myself on this matter!
