@@ -20,7 +20,7 @@ It was highlighted what is the diferrence between em and rem;
 
 ### em behavior
 
-When use in the font-size property it means that the property is setted according to the parent element.
+When use in the font-size property it means that the property is set according to the parent element.
 
 Example:
 
