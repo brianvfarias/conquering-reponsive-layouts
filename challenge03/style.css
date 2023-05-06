@@ -19,7 +19,6 @@ body {
 .container {
   background: var(--background);
   padding: clamp(4rem, 20vh, 9.25rem) clamp(2.25rem, 10vw, 7.5rem);
-  margin: 0 auto;
 }
 
 .content {
