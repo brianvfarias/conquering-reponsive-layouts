@@ -6,7 +6,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -45,13 +45,13 @@ em {
 h1 {
   font-size: 3.75rem;
   color: var(--last-section-bg);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
 h2 {
   font-size: 2.25rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
@@ -105,19 +105,33 @@ section {
   background: var(--last-section-bg);
 }
 
+h1,
+h2 {
+  margin-top: 0;
+}
+
 img {
   max-width: 100%;
   border: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   html {
     font-size: 14px;
   }
 
+  section {
+    padding-block: 1.5rem;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 95%;
+  }
+
   .sec1-text {
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .sec-w-img {
@@ -126,4 +140,8 @@ img {
     align-items: center;
   }
 
+  .sec-w-img img,
+  .sec-w-img div {
+    width: 80%;
+  }
 }
