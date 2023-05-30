@@ -1,0 +1,329 @@
+html {
+  color-scheme: dark;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+h1 span,
+h2,
+h3 {
+  color: #a59678;
+  margin: 0;
+}
+
+section,
+footer {
+  padding-block: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header {
+  background-color: #2e323f;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.open-list {
+  align-self: self-start;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+
+.ph {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.ph.ph-list:hover,
+.ph.ph-list:focus {
+  color: lightgreen;
+}
+
+.ph.ph-x-square:hover,
+.ph.ph-x-square:focus {
+  color: red;
+}
+
+/* nav {
+  position: absolute;
+} */
+
+.inactive {
+  display: none;
+  visibility: hidden;
+  position: relative;
+}
+
+.nav-list.inactive {
+  display: none;
+  visibility: hidden;
+}
+
+.nav-list {
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+
+.nav-item {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.nav-item:hover,
+.nav-item:focus,
+.hero__button:hover,
+.hero__button:focus {
+  opacity: .70;
+}
+
+.nav-item__button,
+.hero__button {
+  text-transform: uppercase;
+  background: #a59678;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+}
+
+.hero__button {
+  font-size: 1.5rem;
+}
+
+.hero {
+  background: #3b4050;
+  padding-block: 2rem;
+}
+
+.hero-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.advantages {
+  background: #f1f1f1;
+  color: black;
+  text-align: center;
+}
+
+.advantages h2 {
+  font-size: 1.875rem;
+}
+
+.advantages p {
+  font-size: 1.125rem;
+}
+
+.tallest {
+  background: #ffffff;
+  color: black
+}
+
+.tallest aside h2 {
+  color: white;
+}
+
+aside div {
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+aside>* {
+  background-color: #3b4050;
+  color: white;
+  text-align: center;
+}
+
+.tallest h2 {
+  font-size: 2.25rem;
+}
+
+.tallest p {
+  font-size: 1.32rem;
+}
+
+aside h2 {
+  font-size: 1.875rem;
+}
+
+aside p {
+  font-size: 1.125rem;
+}
+
+footer {
+  background: #3b4050;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .container h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer .container h3 {
+  font-size: 1.32rem;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer li {
+  margin-top: .75rem;
+  font-size: 1rem;
+}
+
+footer li:hover,
+footer li:focus {
+  opacity: 0.7;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+
+  .advantages .container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .tallest aside {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 21px;
+  }
+
+  .hero .hero-container {
+    flex-direction: row;
+  }
+
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list,
+  .nav-list.inactive {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .inactive,
+  .nav-list.inactive,
+  .nav-list {
+    display: flex;
+    visibility: visible;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .open-list {
+    display: none;
+    visibility: hidden;
+  }
+
+  .tallest .container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .tallest aside {
+    flex-direction: column;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+  }
+}
